@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/e">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="請選擇一個情境"
+        android:textSize="24sp"
+        android:textAppearance="@color/black"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/dailyScenarioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日常情境"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/specialScenarioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="特殊情境" />
+</LinearLayout>

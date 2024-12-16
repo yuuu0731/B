@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/d"
+        android:scaleType="centerCrop"
+        android:alpha="0.5" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="報警時該說什麼？"
+        android:textSize="24sp"
+        android:textAppearance="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 選項一：我在(發生車禍的地方)發生車禍了 -->
+    <Button
+        android:id="@+id/optionOneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我在(發生車禍的地方)發生車禍了"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 選項二：我在這裡出車禍了 -->
+    <Button
+        android:id="@+id/optionTwoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我在這裡出車禍了"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/hintTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="沒事的，再試試看！"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginBottom="24dp" />
+    </LinearLayout>
+</FrameLayout>
